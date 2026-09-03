@@ -3,11 +3,14 @@
 #include <Servo.h>
 
 //glob vars
-const ldr_pin= A0;
-const gas_pin=A1;
-const temp_pin=A2;
-const servo_pin=9;
-const buzz_pin=12;
+const int ldr_pin= A0;
+const int gas_pin=A1;
+const int temp_pin=A2;
+const int servo_pin=9;
+const int buzz_pin=12;
+
+//servo obj
+Servo s_obj;
 
 //data holding vars
 int temp=0, gas=0, ldr=0;
